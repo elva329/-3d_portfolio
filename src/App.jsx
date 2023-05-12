@@ -7,6 +7,7 @@ import Experience
  from "./components/Experience";
 import Tech from "./components/Tech";
 import Works from "./components/Works";
+import Feedbacks from "./components/Feedbacks";
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        {/* <Feedbacks /> */}
+        <Feedbacks />
       </div>
       <div className="relative z-0">
         {/* <Contact />
