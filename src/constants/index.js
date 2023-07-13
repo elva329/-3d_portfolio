@@ -17,12 +17,16 @@ import {
   docker,
   meta,
   starbucks,
+  kujiale,
+  ineat,
   tesla,
   shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  xgate,
+  unisys,
 } from '../assets';
 
 export const navLinks = [
@@ -45,18 +49,18 @@ const services = [
     title: 'Web Developer',
     icon: web,
   },
+  // {
+  //   title: 'React Native Developer',
+  //   icon: mobile,
+  // },
   {
-    title: 'React Native Developer',
-    icon: mobile,
-  },
-  {
-    title: 'Backend Developer',
+    title: 'Frontend Developer',
     icon: backend,
   },
-  {
-    title: 'Content Creator',
-    icon: creator,
-  },
+  // {
+  //   title: 'Content Creator',
+  //   icon: creator,
+  // },
 ];
 
 const technologies = [
@@ -104,67 +108,58 @@ const technologies = [
     name: 'git',
     icon: git,
   },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    title: 'Senior Software Engineer',
+    company_name: 'Kujiale',
+    icon: kujiale,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'Nov 2020 - June 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Led the project of Meijian Intelligent Generating, architecting, and developing various web pages using React, and set development standards for the team to help guide engineering vision.',
+      'Optimized the CI/CD solutions to extract the Kigma framework as a standalone npm package, and released 20+ npm packages for the business side to use.',
+      'Participated in the UI library development, implemented several reusable UI components, and applied them to other projects.',
+      'Mentored junior developers and interns, enabling them to achieve professional growth and personal goals.',
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
+    title: 'Senior Frontend Engineer',
+    company_name: 'INEAT Group',
+    icon: ineat,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'Jul 2018 - Oct 2020',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Using React, and Redux to create responsive web applications that work across desktops, tablets, and mobile devices.',
+      'Automated image optimization using Webpack, minified JS, and CSS modules, optimized 30+ key content pages for SEO objectives, improving FP and FCP by 30%.',
+      'Implemented a WeChat campaign boilerplate for WeChat H5 projects to improve the development efficiency, and reduced the release cycle of the project. Released 5+ WeChat H5 campaigns in 6 months after employment.',
+      'Developed and released two WeChat mini-programs, which acquired 10, 000 PV within 3 months after release.',
+      'Served as the point of contact for client stakeholders throughout all phases of the development lifecycle, fielded quality concerns, identified solutions, and aligned deliverables with customer business specifications.',
     ],
   },
   {
     title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
+    company_name: 'XGATE (Hong Kong) Corporation Ltd',
+    icon: xgate,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: 'Apr 2017 - Jun 2018',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Implemented backend functionalities as well as front-end features for external and internal websites, specializing in backend development using PHP.',
+      'Corporate with web designers to update the UI of the CRM platform using standard HTML/CSS/JavaScript/jQuery practices.',
+      'Carried out quality assurance tests to discover errors, optimize usabilities, and bug fixing.',
     ],
   },
   {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
+    title: 'Software Engineer',
+    company_name: 'Unisys (Shanghai) Information Technology Co., Ltd',
+    icon: unisys,
     iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
+    date: 'Jun 2011 - Jun 2015',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Implemented the Robot automation test framework, and automated manual test cases to reduce regression test duration from one week to 4 hours.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Performed various types of tests, and optimized test plans and test cases according to the software design and functional requirements, which improved the test coverage to over 85%.',
     ],
   },
 ];
