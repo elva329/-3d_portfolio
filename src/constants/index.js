@@ -27,6 +27,7 @@ import {
   threejs,
   xgate,
   unisys,
+  ar,
 } from '../assets';
 
 export const navLinks = [
@@ -193,6 +194,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: 'AR Edutainment Application',
+    description: 'xxx',
+    tags: [
+      {
+        name: 'AR',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Edutainment',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Unity',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: ar,
+    source_code_link: '',
+    id: 1,
+  },
+  {
     name: 'Car Rent',
     description:
       'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
@@ -212,6 +234,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: 'https://github.com/',
+    id: 2,
   },
   {
     name: 'Job IT',
@@ -233,6 +256,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: 'https://github.com/',
+    id: 3,
   },
   {
     name: 'Trip Guide',
@@ -254,6 +278,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: 'https://github.com/',
+    id: 4,
   },
 ];
 

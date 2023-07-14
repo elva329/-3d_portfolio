@@ -33,6 +33,7 @@ import tripguide from './tripguide.png';
 import ineat from './company/ineat.png';
 import xgate from './company/xgate.jpeg';
 import unisys from './company/unisys.png';
+import ar from './videos/ar.png';
 export {
   // logo,
   backend,
@@ -66,4 +67,5 @@ export {
   jobit,
   tripguide,
   unisys,
+  ar,
 };

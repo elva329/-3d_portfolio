@@ -16,7 +16,9 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  id
 }) => {
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -37,7 +39,7 @@ const ProjectCard = ({
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className={id !== 1 ? 'black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer': 'hidden'}
             >
               <img
                 src={github}
@@ -88,10 +90,16 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-
+      <h3>AR Project</h3>
+      <div>
+      <video width="320" height="240" controls>
+          <source src="/assets/videos/ar-app.mp4" />
+      </video>
+      </div>
+      
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id}/>
         ))}
       </div>
     </>
