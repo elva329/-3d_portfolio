@@ -13,14 +13,8 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
   kujiale,
   ineat,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -28,6 +22,8 @@ import {
   xgate,
   unisys,
   ar,
+  gl,
+  fred,
 } from '../assets';
 
 export const navLinks = [
@@ -193,27 +189,27 @@ const testimonials = [
 ];
 
 const projects = [
-  // {
-  //   name: 'AR Edutainment Application',
-  //   description: 'xxx',
-  //   tags: [
-  //     {
-  //       name: 'AR',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'Edutainment',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'Unity',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: ar,
-  //   source_code_link: '',
-  //   id: 1,
-  // },
+  {
+    name: 'AR Edutainment Application',
+    description: 'xxx',
+    tags: [
+      {
+        name: 'AR',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Edutainment',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Unity',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: ar,
+    source_code_link: '',
+    id: 1,
+  },
   {
     name: 'Car Rent',
     description:
@@ -282,4 +278,56 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const miniprograms = [
+  {
+    name: 'Galeries Lafayette WeChat Mini-Program',
+    description: 'xxx',
+    tags: [
+      {
+        name: 'WeChat SDK',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'WeChat Component',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'WeChat Payment',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: gl,
+    source_code_link: '',
+    id: 1,
+  },
+  {
+    name: 'FRED WeChat Mini-Program',
+    description:
+      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    tags: [
+      {
+        name: 'WeChat SDK',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'WeChat Component',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'WeChat Payment',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: fred,
+    source_code_link: '',
+    id: 2,
+  },
+];
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  miniprograms,
+};

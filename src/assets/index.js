@@ -34,8 +34,9 @@ import ineat from './company/ineat.png';
 import xgate from './company/xgate.jpeg';
 import unisys from './company/unisys.png';
 import ar from './videos/ar.png';
+import gl from './gl.png';
+import fred from './fred.png';
 export {
-  // logo,
   backend,
   creator,
   mobile,
@@ -68,4 +69,6 @@ export {
   tripguide,
   unisys,
   ar,
+  gl,
+  fred,
 };

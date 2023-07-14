@@ -4,9 +4,9 @@ import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ar, github } from "../assets";
+import {  github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects, miniprograms } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -16,7 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  id
+  id,
 }) => {
 
   return (
@@ -115,8 +115,15 @@ const Works = () => {
         </div>
       </div>
       
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
+      <h2 className='text-white font-bold text-[32px] mt-10'>Web Application</h2>
+      <div className='mt-10 flex flex-wrap gap-7'>
+        {projects.slice(1, 4).map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id}/>
+        ))}
+      </div>
+      <h2 className='text-white font-bold text-[32px] mt-10'>WeChat Mini-Program</h2>
+      <div className='mt-10 flex flex-wrap gap-7'>
+        {miniprograms.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id}/>
         ))}
       </div>
