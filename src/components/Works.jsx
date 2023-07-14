@@ -93,7 +93,7 @@ const Works = () => {
       <h3>AR Project</h3>
       <div>
       <video width="320" height="240" controls>
-          <source src="/assets/videos/ar-app.mp4" />
+          <source src="/assets/ar-app.mp4" />
       </video>
       </div>
       
