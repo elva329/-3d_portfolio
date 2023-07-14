@@ -281,7 +281,8 @@ const projects = [
 const miniprograms = [
   {
     name: 'Galeries Lafayette WeChat Mini-Program',
-    description: 'xxx',
+    description:
+      'A WeChat Mini-Program for the Galeries Lafayette Department Store in France to let the user get the latest promotion news,  check the tax refund status, and reserve an in-store course through the WeChat mini-program. ',
     tags: [
       {
         name: 'WeChat SDK',
@@ -303,7 +304,7 @@ const miniprograms = [
   {
     name: 'FRED WeChat Mini-Program',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A WeChat mini-program for the France luxury brand Fred, including a brand story introduction, product collection display as well as store locator function.',
     tags: [
       {
         name: 'WeChat SDK',
