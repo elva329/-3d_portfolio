@@ -193,27 +193,27 @@ const testimonials = [
 ];
 
 const projects = [
-  {
-    name: 'AR Edutainment Application',
-    description: 'xxx',
-    tags: [
-      {
-        name: 'AR',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Edutainment',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Unity',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: ar,
-    source_code_link: '',
-    id: 1,
-  },
+  // {
+  //   name: 'AR Edutainment Application',
+  //   description: 'xxx',
+  //   tags: [
+  //     {
+  //       name: 'AR',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'Edutainment',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'Unity',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: ar,
+  //   source_code_link: '',
+  //   id: 1,
+  // },
   {
     name: 'Car Rent',
     description:

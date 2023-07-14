@@ -4,7 +4,7 @@ import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { ar, github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -51,7 +51,7 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <h3 className='text-white font-bold text-[20px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
@@ -90,11 +90,29 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <h3>AR Project</h3>
-      <div>
-      <video width="320" height="240" controls>
-          <source src="/assets/ar-app.mp4" />
-      </video>
+      <h2 className='text-white font-bold text-[32px] mt-10'>AR Application</h2>
+      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+      <div className="">
+        <video controls width="320" height="240">
+            <source src="/ar-app-1.mp4" type="video/mp4"/>
+        </video>
+      </div>
+     
+      <div className='mt-5'>
+          <h3 className='text-white font-bold text-[20px]'>AR Endutainment Application</h3>
+          <p className='mt-2 text-secondary text-[14px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt alias aliquam nobis nam expedita, voluptates fugiat dolorem natus accusamus tempora. Similique aperiam illum reprehenderit earum? Odio repudiandae corrupti architecto iure.</p>
+        </div>
+
+        <div className='mt-4 flex flex-wrap gap-2'>
+          {projects[0].tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
       </div>
       
       <div className='mt-20 flex flex-wrap gap-7'>
