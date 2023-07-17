@@ -1,74 +1,14 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
-import {Tilt} from "react-tilt";
+
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import {  github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, miniprograms, aiApplications } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-  id,
-}) => {
-
-  return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-      >
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className={id !== 1 ? 'black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer': 'hidden'}
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[20px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-        </div>
-
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
-  );
-};
+import { ProjectCard } from "./ProjectCard";
+import { ImageCard } from "./ImageCard";
 
 const Works = () => {
   return (
@@ -92,9 +32,9 @@ const Works = () => {
       </div>
 
       <h2 className='text-white font-bold text-[32px] mt-10'>AR Application</h2>
-      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+      <div className="bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full">
         <div className="">
-          <video controls width="320" height="240" preload="metadata">
+          <video controls  preload="metadata">
               <source src="/ar-app.mp4" type="video/mp4" />
           </video>
         </div>
@@ -119,8 +59,8 @@ const Works = () => {
       <h2 className='text-white font-bold text-[32px] mt-10'>AI Application</h2>
       <div className='mt-10 flex flex-wrap gap-7'>
         {aiApplications.map(aiApplication => {
-          return <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" key={aiApplication.id}>
-                    <video controls width="320" height="240" preload="metadata">
+          return <div className="bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full" key={aiApplication.id}>
+                    <video controls preload="metadata">
                       <source src={aiApplication.source_code_link} type="video/mp4"/>
                     </video>
                     <div className='mt-5'>
@@ -150,7 +90,7 @@ const Works = () => {
       <h2 className='text-white font-bold text-[32px] mt-10'>WeChat Mini-Program</h2>
       <div className='mt-10 flex flex-wrap gap-7'>
         {miniprograms.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id}/>
+          <ImageCard key={`project-${index}`} index={index} {...project} tags={project.tags}/>
         ))}
       </div>
     </>

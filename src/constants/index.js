@@ -302,7 +302,7 @@ const miniprograms = [
     ],
     image: gl,
     source_code_link: '',
-    id: 1,
+    id: 'gl',
   },
   {
     name: 'FRED WeChat Mini-Program',
@@ -324,7 +324,7 @@ const miniprograms = [
     ],
     image: fred,
     source_code_link: '',
-    id: 2,
+    id: 'fred',
   },
 ];
 
