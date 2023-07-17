@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import {  github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects, miniprograms } from "../constants";
+import { projects, miniprograms, aiApplications } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -90,13 +90,14 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
+
       <h2 className='text-white font-bold text-[32px] mt-10'>AR Application</h2>
       <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-      <div className="">
-        <video controls width="320" height="240">
-            <source src="/ar-app-1.mp4" type="video/mp4"/>
-        </video>
-      </div>
+        <div className="">
+          <video controls width="320" height="240" preload="metadata">
+              <source src="/ar-app.mp4" type="video/mp4" />
+          </video>
+        </div>
      
       <div className='mt-5'>
           <h3 className='text-white font-bold text-[20px]'>AR Endutainment Application</h3>
@@ -114,7 +115,32 @@ const Works = () => {
           ))}
         </div>
       </div>
-      
+
+      <h2 className='text-white font-bold text-[32px] mt-10'>AI Application</h2>
+      <div className='mt-10 flex flex-wrap gap-7'>
+        {aiApplications.map(aiApplication => {
+          return <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" key={aiApplication.id}>
+                    <video controls width="320" height="240" preload="metadata">
+                      <source src={aiApplication.source_code_link} type="video/mp4"/>
+                    </video>
+                    <div className='mt-5'>
+              <h3 className='text-white font-bold text-[20px]'>{aiApplication.name}</h3>
+              <p className='mt-2 text-secondary text-[14px]'>{aiApplication.description}</p>
+              </div>
+              <div className='mt-4 flex flex-wrap gap-2'>
+              {aiApplication.tags.map((tag) => (
+                <p
+                  key={`${name}-${tag.name}`}
+                  className={`text-[14px] ${tag.color}`}
+                >
+                  #{tag.name}
+                </p>
+              ))}
+        </div>
+        </div>
+        })}
+      </div>
+
       <h2 className='text-white font-bold text-[32px] mt-10'>Web Application</h2>
       <div className='mt-10 flex flex-wrap gap-7'>
         {projects.slice(1, 4).map((project, index) => (

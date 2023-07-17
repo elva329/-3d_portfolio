@@ -24,6 +24,9 @@ import {
   ar,
   gl,
   fred,
+  aiPostersCover,
+  aiProposalCover,
+  aiTextCover,
 } from '../assets';
 
 export const navLinks = [
@@ -324,6 +327,75 @@ const miniprograms = [
     id: 2,
   },
 ];
+
+const aiApplications = [
+  {
+    name: 'AI Generating Proposals',
+    description:
+      'Generated the proposal based on templates, then AI will apply the selected template to existing design with some  preview images displayed. When click the the next step, the user will be guided to the edit page to update the text or images. When click “generating the proposal” button, the webpage will be redirected to the Meijan Tool for advanced editing.',
+    tags: [
+      {
+        name: 'friday API',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'React',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Typescript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: aiProposalCover,
+    source_code_link: '/ai-proposal.mp4',
+    id: 1,
+  },
+  {
+    name: 'AI Generating Posters',
+    description:
+      'Generate the posters based on keyword, description or user input. User can also upload the image to replace the template image and specify the amount of posters to be generated. After the posters are generated, user can select one poster to edit.',
+    tags: [
+      {
+        name: 'friday API',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'React',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Typescript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: aiPostersCover,
+    source_code_link: '/ai-posters.mp4',
+    id: 2,
+  },
+  {
+    name: 'AI Generating Text',
+    description:
+      'Generate the text based on keyword, description or user input. Each time will generate two paragraphs for user to choose. User can add more input to generate more contexts.',
+    tags: [
+      {
+        name: 'friday API',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'React',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Typescript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: aiTextCover,
+    source_code_link: '/ai-text.mp4',
+    id: 3,
+  },
+];
 export {
   services,
   technologies,
@@ -331,4 +403,5 @@ export {
   testimonials,
   projects,
   miniprograms,
+  aiApplications,
 };

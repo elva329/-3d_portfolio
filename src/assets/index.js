@@ -36,6 +36,10 @@ import unisys from './company/unisys.png';
 import ar from './videos/ar.png';
 import gl from './gl.png';
 import fred from './fred.png';
+import aiPostersCover from './videos/aiPostersCover.png';
+import aiProposalCover from './videos/aiProposalCover.png';
+import aiTextCover from './videos/aiTextCover.png';
+
 export {
   backend,
   creator,
@@ -71,4 +75,7 @@ export {
   ar,
   gl,
   fred,
+  aiPostersCover,
+  aiProposalCover,
+  aiTextCover,
 };
