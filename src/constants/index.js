@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -15,18 +11,15 @@ import {
   git,
   kujiale,
   ineat,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   xgate,
   unisys,
-  ar,
   gl,
   fred,
   aiPostersCover,
   aiProposalCover,
   aiTextCover,
+  iceberg,
 } from '../assets';
 
 export const navLinks = [
@@ -47,7 +40,7 @@ export const navLinks = [
 const services = [
   {
     title: 'Web Developer',
-    icon: web,
+    icon: '',
   },
   // {
   //   title: 'React Native Developer',
@@ -55,7 +48,7 @@ const services = [
   // },
   {
     title: 'Frontend Developer',
-    icon: backend,
+    icon: '',
   },
   // {
   //   title: 'Content Creator',
@@ -193,91 +186,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'AR Edutainment Application',
-    description: 'xxx',
-    tags: [
-      {
-        name: 'AR',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Edutainment',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Unity',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: ar,
-    source_code_link: '',
-    id: 1,
-  },
-  {
-    name: 'Car Rent',
+    name: 'Avoid the Icebergs',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A Web-based VR game that allows user to move left and right to avoid the icebergs',
     tags: [
       {
-        name: 'react',
+        name: 'A-frame',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'Web-VR',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'JavaScript',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: iceberg,
+    source_code_link: 'https://elva-shen-avoid-the-iceburg-vr.glitch.me',
     id: 2,
-  },
-  {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-    id: 3,
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
-    id: 4,
   },
 ];
 

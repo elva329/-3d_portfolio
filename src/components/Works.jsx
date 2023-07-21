@@ -34,14 +34,14 @@ const Works = () => {
       <h2 className='text-white font-bold text-[32px] mt-10'>AR Application</h2>
       <div className="bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full">
         <div className="">
-          <video controls  preload="metadata">
+          <video controls  preload="metadata" muted>
               <source src="/ar-app.mp4" type="video/mp4" />
           </video>
         </div>
      
       <div className='mt-5'>
           <h3 className='text-white font-bold text-[20px]'>AR Endutainment Application</h3>
-          <p className='mt-2 text-secondary text-[14px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt alias aliquam nobis nam expedita, voluptates fugiat dolorem natus accusamus tempora. Similique aperiam illum reprehenderit earum? Odio repudiandae corrupti architecto iure.</p>
+          <p className='mt-2 text-secondary text-[14px]'>Final Project for my master's degree in PolyU. <br /><br />This project presented the design and implementation of an AR edutainment application based on a famous episode “Monkey Subdues White-Skeleton Demon” from the novel Journey to the West. The project involved the details of modeling, rigging, and animation for the 3D models. In this project, Vuforia SDK is adopted as the AR library for tracking, graphic adaption and interaction, Unity is the game engine that used for creating the games and other interactive 3D contents. By augmenting the 3D models and animations, the episode can be presented in an interactive and engaging way.</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -54,6 +54,13 @@ const Works = () => {
             </p>
           ))}
         </div>
+      </div>
+
+      <h2 className='text-white font-bold text-[32px] mt-10'>VR Application</h2>
+      <div className='mt-10 flex flex-wrap gap-7'>
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id}/>
+        ))}
       </div>
 
       <h2 className='text-white font-bold text-[32px] mt-10'>AI Application</h2>
@@ -81,12 +88,6 @@ const Works = () => {
         })}
       </div>
 
-      <h2 className='text-white font-bold text-[32px] mt-10'>Web Application</h2>
-      <div className='mt-10 flex flex-wrap gap-7'>
-        {projects.slice(1, 4).map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id}/>
-        ))}
-      </div>
       <h2 className='text-white font-bold text-[32px] mt-10'>WeChat Mini-Program</h2>
       <div className='mt-10 flex flex-wrap gap-7'>
         {miniprograms.map((project, index) => (
