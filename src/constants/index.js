@@ -184,7 +184,7 @@ const projects = [
   {
     name: 'VR in Palace Museum',
     description:
-      'A Web-based VR game that allows user to move left and right to avoid the icebergs',
+      'A Web-based VR viewing experience that allows user to see the exhibits from the Palace Museum in an engaging way.',
     tags: [
       {
         name: 'A-frame',
