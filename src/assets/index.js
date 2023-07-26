@@ -26,6 +26,7 @@ import aiPostersCover from './videos/aiPostersCover.png';
 import aiProposalCover from './videos/aiProposalCover.png';
 import aiTextCover from './videos/aiTextCover.png';
 import iceberg from './vr/iceberg.png';
+import palace from './vr/palace.png';
 export {
   github,
   menu,
@@ -52,4 +53,5 @@ export {
   aiProposalCover,
   aiTextCover,
   iceberg,
+  palace,
 };

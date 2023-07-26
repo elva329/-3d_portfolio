@@ -20,6 +20,7 @@ import {
   aiProposalCover,
   aiTextCover,
   iceberg,
+  palace,
 } from '../assets';
 
 export const navLinks = [
@@ -157,33 +158,6 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
-];
-
 const projects = [
   {
     name: 'Avoid the Icebergs',
@@ -205,6 +179,28 @@ const projects = [
     ],
     image: iceberg,
     source_code_link: 'https://elva-shen-avoid-the-iceburg-vr.glitch.me',
+    id: 1,
+  },
+  {
+    name: 'VR in Palace Museum',
+    description:
+      'A Web-based VR game that allows user to move left and right to avoid the icebergs',
+    tags: [
+      {
+        name: 'A-frame',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Web-VR',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'JavaScript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: palace,
+    source_code_link: 'https://elva329.github.io/palace-museum-vr/',
     id: 2,
   },
 ];
@@ -328,7 +324,6 @@ export {
   services,
   technologies,
   experiences,
-  testimonials,
   projects,
   miniprograms,
   aiApplications,

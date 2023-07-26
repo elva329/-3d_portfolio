@@ -60,7 +60,7 @@ export const ProjectCard = ({
           ))}
           </div>
          
-           <button className="bg-orange-300 p-2 rounded-2xl text-[15px]" onClick={() => window.open('https://elva-shen-avoid-the-iceburg-vr.glitch.me/', '')}>Live Demo</button>
+           <button className="bg-orange-300 p-2 rounded-2xl text-[15px]" onClick={() => window.open(source_code_link, '')}>Live Demo</button>
         </div>
        
       </Tilt>

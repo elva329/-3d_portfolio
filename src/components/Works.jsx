@@ -59,7 +59,7 @@ const Works = () => {
       <h2 className='text-white font-bold text-[32px] mt-10'>VR Application</h2>
       <div className='mt-10 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id}/>
+          <ProjectCard key={project.id} index={index} {...project} id={project.id}/>
         ))}
       </div>
 
