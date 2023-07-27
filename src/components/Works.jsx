@@ -2,7 +2,6 @@
 /* eslint-disable react/prop-types */
 
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects, miniprograms, aiApplications } from "../constants";
@@ -32,13 +31,10 @@ const Works = () => {
       </div>
 
       <h2 className='text-white font-bold text-[32px] mt-10'>AR Application</h2>
-      <div className="bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full">
-        <div className="">
+      <div className="bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full mt-10">
           <video controls  preload="metadata" muted>
               <source src="/ar-app.mp4" type="video/mp4" />
-          </video>
-        </div>
-     
+          </video>     
       <div className='mt-5'>
           <h3 className='text-white font-bold text-[20px]'>AR Endutainment Application</h3>
           <p className='mt-2 text-secondary text-[14px]'>Final Project for my master's degree in PolyU. <br /><br />This project presented the design and implementation of an AR edutainment application based on a famous episode “Monkey Subdues White-Skeleton Demon” from the novel Journey to the West. The project involved the details of modeling, rigging, and animation for the 3D models. In this project, Vuforia SDK is adopted as the AR library for tracking, graphic adaption and interaction, Unity is the game engine that used for creating the games and other interactive 3D contents. By augmenting the 3D models and animations, the episode can be presented in an interactive and engaging way.</p>
@@ -87,15 +83,18 @@ const Works = () => {
         </div>
         })}
       </div>
-
+      
+      <div>
       <h2 className='text-white font-bold text-[32px] mt-10'>WeChat Mini-Program</h2>
-      <div className='mt-10 flex flex-wrap gap-7'>
+      <div className='flex flex-wrap gap-7 -mt-10'>
         {miniprograms.map((project, index) => (
           <ImageCard key={`project-${index}`} index={index} {...project} tags={project.tags}/>
         ))}
       </div>
+      </div>
+      
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

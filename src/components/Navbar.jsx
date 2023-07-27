@@ -1,6 +1,5 @@
 import {  useState } from "react";
 import { Link } from "react-router-dom";
-
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 
