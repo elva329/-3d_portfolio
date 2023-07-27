@@ -42,6 +42,7 @@ const Navbar = () => {
             alt='menu'
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
+            loading="lazy"
           />
 
           <div

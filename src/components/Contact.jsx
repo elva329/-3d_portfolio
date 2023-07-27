@@ -19,10 +19,10 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
           <label className='flex flex-col'>
-            <div className='text-white font-medium mb-4 flex items-center'><img src={email} alt="email" className="w-4 h-4 mr-5"/> jia.shen.job@gmail.com</div>
+            <div className='text-white font-medium mb-4 flex items-center'><img src={email} alt="email" className="w-4 h-4 mr-5" loading="lazy"/> jia.shen.job@gmail.com</div>
           </label>
           <label className='flex flex-col'>
-            <div className='text-white font-medium mb-4 flex items-center'><img src={phone} alt="phone" className="w-4 h-4 mr-5"/> (+86)15021893526</div>
+            <div className='text-white font-medium mb-4 flex items-center'><img src={phone} alt="phone" className="w-4 h-4 mr-5" loading="lazy"/> (+86)15021893526</div>
           </label>
       </motion.div>
       <motion.div

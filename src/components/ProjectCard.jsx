@@ -27,20 +27,8 @@ export const ProjectCard = ({
             src={image}
             alt='project_image'
             className='w-full h-full object-contain'
+            loading="lazy"
           />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            {/* <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className={id !== 1 ? 'black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer': 'hidden'}
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div> */}
-          </div>
         </div>
 
         <div className='mt-5'>

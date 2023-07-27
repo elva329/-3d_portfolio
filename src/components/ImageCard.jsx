@@ -32,6 +32,7 @@ export const ImageCard = ({
             src={image}
             alt='project_image'
             className='relative w-[100px] h-[100px]'
+            loading="lazy"
           />
           <p className="text-secondary text-[14px] ml-5">Scan this QRcode using WeChat to have a try</p>
           
