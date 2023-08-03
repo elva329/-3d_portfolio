@@ -9,8 +9,8 @@ function ARApplication() {
      {arApplications.map(aiApplication => {
       return  <div className="bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full mt-10" key={aiApplication.id}>
               {aiApplication.id === 2 ?  <video controls  preload="metadata" muted>
-                    <source src={aiApplication.image} type="video/mp4" />
-                </video> : <img src={aiApplication.image} alt="business-card"/>}
+                    <source src={aiApplication.image} type="video/mp4"/>
+                  </video> : <img src={aiApplication.image} alt="business-card"/>}
                   
                 <div className='mt-5'>
                   <h3 className='text-white font-bold text-[20px]'>{aiApplication.name}</h3>

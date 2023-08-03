@@ -205,7 +205,7 @@ const arApplications = [
         id: 3,
       },
     ],
-    image: '/ar-app.mp4',
+    image: '/ar-edu.mp4',
     source_code_link: '',
     id: 2,
   },
