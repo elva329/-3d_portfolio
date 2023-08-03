@@ -1,4 +1,3 @@
-import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
@@ -25,7 +24,6 @@ import iceberg from './vr/iceberg.png';
 import palace from './vr/palace.png';
 import businessCard from './ar/businessCard.png';
 export {
-  github,
   menu,
   close,
   css,
