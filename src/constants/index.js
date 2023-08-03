@@ -235,7 +235,7 @@ const vrApplicaitions = [
     id: 1,
   },
   {
-    name: 'VR in Palace Museum',
+    name: 'The Palace Museum Exhibits in VR',
     description:
       'A Web-based VR viewing experience that allows user to see the exhibits from the Palace Museum in an engaging way.',
     tags: [
