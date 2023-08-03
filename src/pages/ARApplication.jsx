@@ -22,7 +22,7 @@ function ARApplication() {
                       className='relative w-[150px] h-[150px]'
                       loading="lazy"
                     />
-          <p className="text-secondary text-[14px] ml-5">Scan this QRcode using phone camera to have a try</p>
+          <p className="text-secondary text-[14px] ml-5">Scan this QRcode using phone camera to experience</p>
         </div>}
                   <div className='mt-4 flex flex-wrap gap-2'>
                     {aiApplication.tags.map((tag) => (
