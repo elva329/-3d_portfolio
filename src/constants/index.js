@@ -16,9 +16,6 @@ import {
   unisys,
   gl,
   fred,
-  aiPostersCover,
-  aiProposalCover,
-  aiTextCover,
   iceberg,
   palace,
   businessCard,
@@ -220,14 +217,17 @@ const vrApplicaitions = [
       {
         name: 'A-frame',
         color: 'blue-text-gradient',
+        id: 1,
       },
       {
         name: 'Web-VR',
         color: 'green-text-gradient',
+        id: 2,
       },
       {
         name: 'JavaScript',
         color: 'pink-text-gradient',
+        id: 3,
       },
     ],
     image: iceberg,
@@ -242,14 +242,17 @@ const vrApplicaitions = [
       {
         name: 'A-frame',
         color: 'blue-text-gradient',
+        id: 1,
       },
       {
         name: 'Web-VR',
         color: 'green-text-gradient',
+        id: 2,
       },
       {
         name: 'JavaScript',
         color: 'pink-text-gradient',
+        id: 3,
       },
     ],
     image: palace,
@@ -267,14 +270,17 @@ const miniprograms = [
       {
         name: 'WeChat SDK',
         color: 'blue-text-gradient',
+        id: 1,
       },
       {
         name: 'WeChat Component',
         color: 'green-text-gradient',
+        id: 2,
       },
       {
         name: 'WeChat Payment',
         color: 'pink-text-gradient',
+        id: 3,
       },
     ],
     image: gl,
@@ -289,14 +295,17 @@ const miniprograms = [
       {
         name: 'WeChat SDK',
         color: 'blue-text-gradient',
+        id: 1,
       },
       {
         name: 'WeChat Component',
         color: 'green-text-gradient',
+        id: 2,
       },
       {
         name: 'WeChat Payment',
         color: 'pink-text-gradient',
+        id: 3,
       },
     ],
     image: fred,
@@ -314,17 +323,20 @@ const aiApplications = [
       {
         name: 'friday API',
         color: 'blue-text-gradient',
+        id: 1,
       },
       {
         name: 'React',
         color: 'green-text-gradient',
+        id: 2,
       },
       {
         name: 'Typescript',
         color: 'pink-text-gradient',
+        id: 3,
       },
     ],
-    image: aiProposalCover,
+    image: '',
     source_code_link: '/ai-proposal.mp4',
     id: 1,
   },
@@ -336,17 +348,20 @@ const aiApplications = [
       {
         name: 'friday API',
         color: 'blue-text-gradient',
+        id: 1,
       },
       {
         name: 'React',
         color: 'green-text-gradient',
+        id: 2,
       },
       {
         name: 'Typescript',
         color: 'pink-text-gradient',
+        id: 3,
       },
     ],
-    image: aiPostersCover,
+    image: '',
     source_code_link: '/ai-posters.mp4',
     id: 2,
   },
@@ -358,17 +373,20 @@ const aiApplications = [
       {
         name: 'friday API',
         color: 'blue-text-gradient',
+        id: 1,
       },
       {
         name: 'React',
         color: 'green-text-gradient',
+        id: 2,
       },
       {
         name: 'Typescript',
         color: 'pink-text-gradient',
+        id: 3,
       },
     ],
-    image: aiTextCover,
+    image: '',
     source_code_link: '/ai-text.mp4',
     id: 3,
   },

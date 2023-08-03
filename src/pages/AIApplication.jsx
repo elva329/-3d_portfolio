@@ -17,7 +17,7 @@ function AIApplication() {
             <div className='mt-4 flex flex-wrap gap-2'>
             {aiApplication.tags.map((tag) => (
               <p
-                key={`${name}-${tag.name}`}
+                key={tag.id}
                 className={`text-[14px] ${tag.color}`}
               >
                 #{tag.name}

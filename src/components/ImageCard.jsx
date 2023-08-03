@@ -39,7 +39,7 @@ export const ImageCard = ({
         <div className='flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
-              key={`${name}-${tag.name}`}
+              key={tag.id}
               className={`text-[14px] ${tag.color}`}
             >
               #{tag.name}

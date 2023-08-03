@@ -40,7 +40,7 @@ export const ProjectCard = ({
           <div className="flex flex-1 gap-2">
           {tags.map((tag) => (
             <p
-              key={`${name}-${tag.name}`}
+              key={tag.id}
               className={`text-[14px] ${tag.color}`}
             >
               #{tag.name}
