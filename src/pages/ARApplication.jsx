@@ -38,7 +38,6 @@ function ARApplication() {
         </div>
      })}
      </div>
-   
     </>
   )
 }

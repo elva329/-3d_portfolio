@@ -1,4 +1,3 @@
-
 import { aiApplications } from "../constants"
 
 function AIApplication() {

@@ -1,15 +1,13 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import {Tilt} from "react-tilt";
-import { fadeIn } from "../utils/motion";
 
 export const ProjectCard = ({
-  index,
   name,
   description,
   tags,
   image,
   source_code_link,
-  id,
 }) => {
 
   return (

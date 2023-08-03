@@ -1,29 +1,34 @@
 
 import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Experience
- from "./components/Experience";
-import Tech from "./components/Tech";
-import Works from "./components/Works";
-import Contact from "./components/Contact";
+import React, { Suspense } from "react";
 import StarsCanvas from "./components/canvas/Stars";
+
+const Navbar = React.lazy(() => import('./components/Navbar'));
+const Hero = React.lazy(() => import('./components/Hero'));
+const Tech = React.lazy(() => import('./components/Tech'));
+const Works = React.lazy(() => import('./components/Works'));
+const Contact = React.lazy(() => import('./components/Contact'));
+const Experience = React.lazy(() => import('./components/Experience'));
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-color bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+          <Suspense fallback={<div>Loading...</div>}>
+              <Navbar />
+              <Hero />
+          </Suspense>
         </div>
-        <Experience />
-        <Tech />
-        <Works />
+          <Experience />
+          <Tech />
+          <Works />
       </div>
       <div className="relative z-0">
-        <Contact />
-        <StarsCanvas />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Contact />
+          <StarsCanvas />
+        </Suspense>
       </div>
     </BrowserRouter>
   )

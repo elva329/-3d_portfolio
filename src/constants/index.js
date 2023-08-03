@@ -36,25 +36,6 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: 'Web Developer',
-    icon: '',
-  },
-  // {
-  //   title: 'React Native Developer',
-  //   icon: mobile,
-  // },
-  {
-    title: 'Frontend Developer',
-    icon: '',
-  },
-  // {
-  //   title: 'Content Creator',
-  //   icon: creator,
-  // },
-];
-
 const technologies = [
   {
     name: 'HTML 5',
@@ -392,7 +373,6 @@ const aiApplications = [
   },
 ];
 export {
-  services,
   technologies,
   experiences,
   vrApplicaitions,

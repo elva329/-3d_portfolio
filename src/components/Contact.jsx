@@ -6,6 +6,7 @@ import { slideIn } from "../utils/motion";
 import EarthCanvas from "./canvas/Earth";
 import email from '../assets/icon/email.png';
 import phone from '../assets/icon/phone.png';
+
 const Contact = () => { 
   return (
     <>

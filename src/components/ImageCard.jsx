@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import {Tilt} from "react-tilt";
 import { fadeIn } from "../utils/motion";
