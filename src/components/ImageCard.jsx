@@ -21,8 +21,6 @@ export const ImageCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        
-
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[20px]'>{name}</h3>
           <div className='mt-2 text-secondary text-[14px]'>{description}</div>

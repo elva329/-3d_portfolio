@@ -13,7 +13,7 @@ const Experience = React.lazy(() => import('./components/Experience'));
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-primary pb-20">
         <div className="bg-hero-pattern bg-color bg-no-repeat bg-center">
           <Suspense fallback={<div>Loading...</div>}>
               <Navbar />

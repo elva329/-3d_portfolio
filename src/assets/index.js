@@ -23,6 +23,8 @@ import fred from './fred.jpg';
 import iceberg from './vr/iceberg.png';
 import palace from './vr/palace.png';
 import businessCard from './ar/businessCard.png';
+import eduPoster from './ar/eduPoster.png';
+
 export {
   menu,
   close,
@@ -46,4 +48,5 @@ export {
   iceberg,
   palace,
   businessCard,
+  eduPoster,
 };
