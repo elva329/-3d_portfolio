@@ -28,7 +28,6 @@ import aiTextCover from './videos/aiTextCover.png';
 import iceberg from './vr/iceberg.png';
 import palace from './vr/palace.png';
 import businessCard from './ar/businessCard.png';
-
 export {
   github,
   menu,

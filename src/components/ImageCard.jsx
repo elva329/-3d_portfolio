@@ -34,10 +34,8 @@ export const ImageCard = ({
             className='relative w-[100px] h-[100px]'
             loading="lazy"
           />
-          <p className="text-secondary text-[14px] ml-5">Scan this QRcode using WeChat to have a try</p>
-          
+          <p className="text-secondary text-[14px] ml-5">Scan this QRcode using 【WeChat】 to have a try</p>
         </div>
-
         <div className='flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
