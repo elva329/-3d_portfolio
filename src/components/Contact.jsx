@@ -10,8 +10,8 @@ import phone from '../assets/icon/phone.png';
 const Contact = () => { 
   return (
     <>
-      <div className="text-right">&#128161; Move the visual earth to play around &#128515;</div>
-      <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'
+      <div className="text-right">&#128161; Move the visual earth to play around, click the robot to start ChatGPT experience &#128515;</div>
+      <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-15 overflow-hidden'
     >
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}

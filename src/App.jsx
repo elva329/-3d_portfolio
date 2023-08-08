@@ -9,6 +9,7 @@ const Tech = React.lazy(() => import('./components/Tech'));
 const Works = React.lazy(() => import('./components/Works'));
 const Contact = React.lazy(() => import('./components/Contact'));
 const Experience = React.lazy(() => import('./components/Experience'));
+const Assistant = React.lazy(() => import('./pages/Assistant'));
 
 const App = () => {
   return (
@@ -24,10 +25,11 @@ const App = () => {
           <Tech />
           <Works />
       </div>
-      <div className="relative z-0">
+      <div className="relative z-0 flex self-auto items-center">
         <Suspense fallback={<div>Loading...</div>}>
           <Contact />
           <StarsCanvas />
+          <Assistant />
         </Suspense>
       </div>
     </BrowserRouter>
