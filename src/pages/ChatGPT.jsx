@@ -5,10 +5,12 @@ function ChatGPT() {
   return (
     <> 
      <Suspense fallback={<div>Loading...</div>}>
-        <div className='w-[250px] h-[350px] bg-[#343541] fixed bottom-10 right-60 rounded-xl z-112 transition-[0.3s] duration-[ease-in-ou]'>
-            <iframe src='https://open-ai-codex-lovat.vercel.app/' className="w-[250px] h-[350px] rounded-xl"></iframe>
-        </div>
-        <img src={close} width={28} height={28} className="absolute -left-1 -top-40"/>
+      <div className='w-[275px] h-[515px] bg-[#343541] fixed bottom-10 right-60 rounded-xl z-112 transition-[0.3s] duration-[ease-in-out]'>
+        <div className="relative">
+              <iframe src='https://fcc-chatbot-example-lwer.vercel.app/' className="w-[275px] h-[515px] rounded-xl"></iframe>
+          </div>
+          <img src={close} width={28} height={28} className="absolute -top-4 -right-8"/>
+      </div>
      </Suspense>
      
     </>
