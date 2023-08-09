@@ -19,7 +19,7 @@ export const ImageCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full h-[350px]'
       >
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[20px]'>{name}</h3>
