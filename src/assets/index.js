@@ -24,6 +24,9 @@ import iceberg from './vr/iceberg.png';
 import palace from './vr/palace.png';
 import businessCard from './ar/businessCard.png';
 import eduPoster from './ar/eduPoster.png';
+import aiPostersCover from './ai/aiPostersCover.png';
+import aiProposalCover from './ai/aiProposalCover.png';
+import aiTextCover from './ai/aiTextCover.png';
 
 export {
   menu,
@@ -49,4 +52,7 @@ export {
   palace,
   businessCard,
   eduPoster,
+  aiPostersCover,
+  aiProposalCover,
+  aiTextCover,
 };

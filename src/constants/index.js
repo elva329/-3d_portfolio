@@ -19,6 +19,9 @@ import {
   iceberg,
   palace,
   businessCard,
+  aiPostersCover,
+  aiProposalCover,
+  aiTextCover,
 } from '../assets';
 
 export const navLinks = [
@@ -317,7 +320,7 @@ const aiApplications = [
         id: 3,
       },
     ],
-    image: '',
+    image: aiProposalCover,
     source_code_link: '/ai-proposal.mp4',
     id: 1,
   },
@@ -342,7 +345,7 @@ const aiApplications = [
         id: 3,
       },
     ],
-    image: '',
+    image: aiPostersCover,
     source_code_link: '/ai-posters.mp4',
     id: 2,
   },
@@ -367,7 +370,7 @@ const aiApplications = [
         id: 3,
       },
     ],
-    image: '',
+    image: aiTextCover,
     source_code_link: '/ai-text.mp4',
     id: 3,
   },

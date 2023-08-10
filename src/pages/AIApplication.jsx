@@ -6,7 +6,7 @@ function AIApplication() {
     <div className='flex flex-wrap gap-7'>
       {aiApplications.map(aiApplication => {
         return <div className="bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full" key={aiApplication.id}>
-                  <video controls preload="metadata">
+                  <video controls preload="metadata" poster={aiApplication.image}>
                     <source src={aiApplication.source_code_link} type="video/mp4"/>
                   </video>
                   <div className='mt-5'>
