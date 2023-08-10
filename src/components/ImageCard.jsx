@@ -4,7 +4,6 @@ import {Tilt} from "react-tilt";
 import { fadeIn } from "../utils/motion";
 
 export const ImageCard = ({
-  index,
   name,
   description,
   tags,
@@ -12,7 +11,7 @@ export const ImageCard = ({
 }) => {
 
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div>
       <Tilt
         options={{
           max: 45,

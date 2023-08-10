@@ -2,8 +2,8 @@ import { aiApplications } from "../constants"
 
 function AIApplication() {
   return (
-    <>  <h2 className='text-white font-bold text-[32px] mt-10'>AI Application</h2>
-    <div className='mt-10 flex flex-wrap gap-7'>
+    <>  <h2 className='text-white font-bold text-[32px] mt-10 mb-10'>AI Application</h2>
+    <div className='flex flex-wrap gap-7'>
       {aiApplications.map(aiApplication => {
         return <div className="bg-tertiary p-5 rounded-2xl sm:w-[560px] w-full" key={aiApplication.id}>
                   <video controls preload="metadata">
