@@ -8,7 +8,7 @@ const Hero = React.lazy(() => import('./components/Hero'));
 const Tech = React.lazy(() => import('./components/Tech'));
 const Works = React.lazy(() => import('./components/Works'));
 const Contact = React.lazy(() => import('./components/Contact'));
-const Experience = React.lazy(() => import('./components/Experience'));
+// const Experience = React.lazy(() => import('./components/Experience'));
 const Assistant = React.lazy(() => import('./pages/Assistant'));
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
               <Hero />
           </Suspense>
         </div>
-          <Experience />
+          {/* <Experience /> */}
           <Tech />
           <Works />
       </div>
