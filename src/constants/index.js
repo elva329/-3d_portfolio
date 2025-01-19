@@ -141,34 +141,34 @@ const experiences = [
 ];
 
 const arApplications = [
-  {
-    name: 'My AR Business Card',
-    description:
-      'My AR business card built using mywebar, canva, figma to show my skillset and personal information. ',
-    tags: [
-      {
-        name: 'Canva',
-        color: 'blue-text-gradient',
-        id: 1,
-      },
-      {
-        name: 'Web-AR',
-        color: 'green-text-gradient',
-        id: 2,
-      },
-      {
-        name: 'JavaScript',
-        color: 'pink-text-gradient',
-        id: 3,
-      },
-    ],
-    image: businessCard,
-    source_code_link: '',
-    id: 1,
-  },
+  // {
+  //   name: 'My AR Business Card',
+  //   description:
+  //     'My AR business card built using mywebar, canva, figma to show my skillset and personal information. ',
+  //   tags: [
+  //     {
+  //       name: 'Canva',
+  //       color: 'blue-text-gradient',
+  //       id: 1,
+  //     },
+  //     {
+  //       name: 'Web-AR',
+  //       color: 'green-text-gradient',
+  //       id: 2,
+  //     },
+  //     {
+  //       name: 'JavaScript',
+  //       color: 'pink-text-gradient',
+  //       id: 3,
+  //     },
+  //   ],
+  //   image: businessCard,
+  //   source_code_link: '',
+  //   id: 1,
+  // },
   {
     name: 'AR Endutainment Application',
-    description: `Final Project for my master's degree in PolyU. This project presented the design and implementation of an AR edutainment application based on a famous episode “Monkey Subdues White-Skeleton Demon” from the novel Journey to the West. The project involved the details of modeling, rigging, and animation for the 3D models. In this project, Vuforia SDK is adopted as the AR library for tracking, graphic adaption and interaction, Unity is the game engine that used for creating the games and other interactive 3D contents. By augmenting the 3D models and animations, the episode can be presented in an interactive and engaging way.`,
+    description: `This project presented the design and implementation of an AR edutainment application based on a famous episode “Monkey Subdues White-Skeleton Demon” from the novel Journey to the West. The project involved the details of modeling, rigging, and animation for the 3D models. In this project, Vuforia SDK is adopted as the AR library for tracking, graphic adaption and interaction, Unity is the game engine that used for creating the games and other interactive 3D contents. By augmenting the 3D models and animations, the episode can be presented in an interactive and engaging way.`,
     tags: [
       {
         name: 'Unity',

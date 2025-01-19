@@ -22,9 +22,9 @@ const Contact = () => {
           <label className='flex flex-col'>
             <div className='text-white font-medium mb-4 flex items-center'><img src={email} alt="email" className="w-4 h-4 mr-5" loading="lazy"/><a href="mailto:jia.shen.job@gmail.com" className="cursor-pointer">jia.shen.job@gmail.com</a></div>
           </label>
-          <label className='flex flex-col'>
+          {/* <label className='flex flex-col'>
             <div className='text-white font-medium mb-4 flex items-center'><img src={phone} alt="phone" className="w-4 h-4 mr-5" loading="lazy"/> <a href="tel:+8615021893526" className="cursor-pointer">(+86) 15021893526</a></div>
-          </label>
+          </label> */}
       </motion.div>
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
